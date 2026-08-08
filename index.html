@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+        <title>Aliyan's Portfolio</title>
+
+        <link href = "https://fonts.googleapis.com/css2?family=Inter:wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel = "stylesheet"/>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <link rel = "stylesheet" href = "style.css"/>
+        
+        <!-- GitHub Calendar Library -->
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    </head>    
+
+    <body>
+        <div class="bg-orb bg-orb--1"></div>
+        <div class="bg-orb bg-orb--2"></div>
+        <input type = "checkbox" id = "theme-toggle" class = "theme-toggle__input" aria-label = "Toggle Dark/Light mode"/>
+        <div class = "page-wrapper">
+        <header class = "header" role = "banner">
+            <nav class = "nav container" aria-label = "Main Navigation">
+                <a href = "#hero" class = "nav__logo" aria-label = "Homepage">
+                    <span class = "nav__logo-text">Aliyan Ahmad</span>
+                    <span class = "nav__logo-dot">.</span>
+                </a>
+
+                <ul class = "nav__list">
+                    <li class = "nav__item">
+                        <a href = "#about" class = "nav__link">About</a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#skills" class = "nav__link">Skills</a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#education" class = "nav__link">Education</a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#projects" class = "nav__link">Projects</a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#contact" class = "nav__link">Contact</a>
+                    </li>
+                    
+                    <li class = "nav__item nav__item--toggle">
+                        <label for = "theme-toggle" class = "theme-toggle__label" aria-label = "Switch Theme">
+                            <i class = "fas fa-moon theme-toggle__icon"></i>
+                            <span class = "theme-toggle_slider"></span>
+                            <i class = "fas fa-sun theme-toggle__icon"></i>
+                        </label>
+                    </li>
+                </ul>
+
+                <label for = "nav-toggle" class = "nav__hamburger" aria-label = "Open Menu">
+                    <span class = "nav__hamburger-line"></span>
+                    <span class = "nav__hamburger-line"></span>
+                    <span class = "nav__hamburger-line"></span>
+                </label>
+            </nav>
+        </header>
+        <input type ="checkbox" id ="nav-toggle" class = "nav-toggle__input" aria-hidden = "true"/>
+
+<!--Main Landing Homepage-->        
+        <section class = "hero" id = "hero" aria-labelledby = "hero-title">
+            <div class = "hero__container container">
+                <div class = "hero__content">
+                    <p class = "hero__subtitle">Hello, I'm</p>
+                    <h1 class = "hero__title" id = "hero-title">
+                        <span class = "hero__title-first">Aliyan Ahmad</span>
+                    </h1>
+                    <p class = "hero__tagline">"Code, Coffee and Crushing Bugs..."</p>
+                    <p class = "hero__description">
+                        "This portfolio is my digital play ground. Showing my 
+                        progress..."
+                    </p>
+                    <div class = "hero__actions">
+                        <a href = "#projects" class = "btn btn--primary">View My Work <i class = "fas fa-arrow-right"></i></a>
+                        <a href = "#contact" class = "btn btn--outline">Let's Talk</a>     
+                    </div>
+                </div>
+                <div class = "hero__image-wrapper">
+                    <div class = "hero__image-border">
+                        <img src = "images/profile.png" alt="My Profile photo" class = "hero__image"/>
+                    </div>
+                    <div class = "hero__floating-badge hero__floating-badge--1">
+                        <i class = "fas fa-code"></i>8+ Real World Projects
+                    </div>
+                    <div class="hero__floating-badge hero__floating-badge--2">
+                        <i class = "fas fa-award"></i> Top 1%
+                    </div>
+                </div>
+            </div>
+
+            <div class = "hero__scroll">
+                <span class = "hero__scroll-text">Scroll</span>
+                <div class = "hero__scroll-line"></div>
+            </div>
+        </section>
+
+<!--About myself-->
+        <section class = "about section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class = "section__header">
+                    <span class="section__badge">About Me</span>
+                    <h2 class="section__title" id="about-title">Who Am I </h2>
+                    <p class="section__subtitle">A brief introduction to my background and ambitions.</p>
+                </div>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p class="about__paragraph">
+                            I'm <strong>Aliyan Ahmad</strong>, a hands on troubleshooter and also a creative web developer
+                            with a strong foundation in programming and modern algorithmic principles. Skilled in languages like Java, C, C++, Python,
+                            I thrive on solving complex problems with clarity and precision. I approach every challenge
+                            with curiosity, strategy and dedication.</p>
+                        <p class="about__paragraph"><strong>Academic Background : </strong> "BS Computer Science" from "NSU Islamabad"
+                            My CourseWork in Computer Science give me the analytical mindset I apply to every project.</p>
+                        <p class="about__paragraph"><strong>Career Interests : </strong>I am deeply passionate about
+                            <span class="about__highlight">Architecture and Scalability</span>,
+                            <span class="about__highlight">DevOps</span>
+                            <span class="about__highlight">Data Structure and Algorithms</span>
+                            The principle I follow : <span class="about__highlight">"Talk is cheap. Show me the code."</span>  
+                        </p>
+                        
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <span class="about__stat-number">1+</span>
+                                <span class="about__stat-label">Years of Development</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">8+</span>
+                                <span class="about__stat-label">Projects</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">100%</span>
+                                <span class="about__stat-label">Responsible</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__visual">
+                        <div class="about__card-decoration">
+                            <div class="about__icon-box">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="about__icon-box about__icon-box--offset">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="about__icon-box about__icon-box--large">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+<!--My skills section-->        
+        <section class="skills section" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section__header">
+                <span class="section__badge">Expertise</span>
+                <h2 class="section__title">My Technical Skills</h2>
+                <p class="section__subtitle">Technologies I work with</p>
+            </div>
+
+            
+            <div class="skills__grid">
+                <div class="skill-card">
+                <div class="skill-card__icon"><i class="fab fa-java"></i></div>
+                <h3 class="skill-card__name">Java</h3>
+                <p class="skill-card__level">Advanced</p>
+                <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="--progress: 92%;"></div>
+                </div>
+            </div>    
+
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-code"></i></div>
+                    <h3 class="skill-card__name">C++</h3>
+                    <p class="skill-card__level">Proficient</p>
+                    <div class="skill-card__bar">
+                        <div class="skill-card__bar-fill" style="--progress: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-terminal"></i></div>
+                    <h3 class="skill-card__name">C</h3>
+                    <p class="skill-card__level">Proficient</p>
+                    <div class="skill-card__bar">
+                        <div class="skill-card__bar-fill" style="--progress: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fab fa-python"></i></div>
+                    <h3 class="skill-card__name">Python</h3>
+                    <p class="skill-card__level">Intermediate</p>
+                    <div class="skill-card__bar">
+                        <div class="skill-card__bar-fill" style="--progress: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fas fa-database"></i></div>
+                    <h3 class="skill-card__name">MySQL</h3>
+                    <p class="skill-card__level">Intermediate</p>
+                    <div class="skill-card__bar">
+                        <div class="skill-card__bar-fill" style="--progress: 55%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fab fa-html5"></i></div>
+                    <h3 class="skill-card__name">HTML</h3>
+                    <p class="skill-card__level">Advanced</p>
+                    <div class="skill-card__bar">
+                        <div class="skill-card__bar-fill" style="--progress: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon"><i class="fab fa-github"></i></div>
+                    <h3 class="skill-card__name">Git & GitHub</h3>
+                    <p class="skill-card__level">Proficient</p>
+                    <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="--progress: 78%;"></div>
+                    </div>
+                </div>
+                
+            </div>   
+        </div>
+    </section>
+    
+<!--GitHub heatmap/-->
+<section class="heatmap-section" style="padding: 40px 0;">
+    <div class="container">
+        <div class="section__header" style="margin-bottom: 30px;">
+            <span class="section__badge">Activity</span>
+            <h2 class="section__title">My GitHub Footprint</h2>
+            <p class="section__subtitle">Live contribution data pulled directly from my GitHub account</p>
+        </div>
+
+        <div class="heatmap-wrapper">
+            <div class="heatmap-container">
+                <!-- Left: GitHub Logo + Stats -->
+                <div class="heatmap-left">
+                    <div class="github-brand">
+                        <div class="github-logo-wrapper">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="github-stats">
+                            <span class="github-username">@codebyaliyan</span>
+                            <span class="github-repo-count">8+ repositories</span>
+                            <span class="github-status">Active</span>
+                        </div>
+                    </div>
+                    <div class="github-divider"></div>
+                    <div class="github-quick-stats">
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">8+</span>
+                            <span class="quick-stat-label">Projects</span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">78%</span>
+                            <span class="quick-stat-label">Proficiency</span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">🔄</span>
+                            <span class="quick-stat-label">Synchronized </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heatmap-right">
+                    <img 
+                        src="https://ghchart.rshah.org/codebyaliyan" 
+                        alt="Aliyan's GitHub Contribution Chart" 
+                        class="github-chart-image"
+                    />
+                    <p class="chart-update-text">
+                        <i class="fas fa-sync-alt"></i> Update daily with real GitHub data
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--My Education/Certification-->
+<section class="education section" id="education" aria-labelledby="edu-title">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__badge">Learning</span>
+                <h2 class="section__title" id="edu-title">My Education</h2>
+                <p class="section__subtitle">The academic foundation that build my career.</p>
+            </div>
+
+            <div class="education__card">
+                <div class="education__icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="education__content">
+                    <h3 class="education__degree">BS Computer Science</h3>
+                    <p class="education__institute">NSU Islamabad</p>
+                    <p class="education__period">4 years<i class="far fa-calendar-alt"></i></p>
+                    <p class="education__info">Data Structures, Web Development, Data Base Management,
+                        App Development and Learning AI.
+                    </p>
+                </div>
+            </div>
+            <div class="education__card education__card--secondary">
+            <div class="education__icon"><i class="fas fa-certificate"></i></div>
+                <div class="education__content">
+                    <h3 class="education__degree">Java Certification</h3>
+                    <p class="education__institute">HackerRank</p>
+                    <p class="education__period"><i class="far fa-calendar-alt"></i> 2025</p>
+                    <p class="education__info">
+                    Certified in Java (Basic) - covering OOP, Data Structures, and Core APIs.</p>
+        
+            <a href="https://www.hackerrank.com/certificates/iframe/1ca59a8c6aff" target="_blank" class="btn btn--primary btn--small" style="margin-top: 14px; padding: 8px 24px; font-size:0.8rem;">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+            </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--My Projects-->    
+    <section class="project section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__badge">Portfolio</span>
+                <h2 class="section__title" id="projects-title">Featured Projects</h2>
+                <p class="section__subtitle">Reflection of passion and skills</p>
+            </div>
+
+            <div class="projects__grid">
+                <article class="project-card">
+                    <div class="project-card__image-wrapper">
+                        <img src="images/project1.jpg" alt="Screenshot of CLI Chat Application" class="project-card__image" loading="lazy"/>
+                        <div class="project-card__overlay">
+                            <a href="https://github.com/codebyaliyan" class="project-card__link" aria-label="View live demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/codebyaliyan/Java-Chat-Application" class="project-card__link" aria-label="View Github Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                            <h3 class="project-card__title">Java Chat Applicaton</h3>
+                            <p class="project-card__description">"Wanted to understand how WhatsApp works in the backend?
+                                I Built this CLI chat with raw Sockets and Threads just to see the magic."</p>
+
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">JAVA</span>
+                                <span class="project-card__tag">Sockets</span>
+                                <span class="project-card__tag">Multi Threading</span>
+                            </div>
+                        </div>
+                </article>
+                <article class="project-card">
+                        <div class="project-card__image-wrapper">
+                            <img src="images/project2.jpg" alt="Screenshot of Weather Forecast App" class="project-card__image" loading="lazy"/>
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/codebyaliyan" class="project-card__link" aria-label="View live demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/codebyaliyan/Weather-App" class="project-card__link" aria-label="View GitHub repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Weather Forecast App</h3>
+                            <p class="project-card__description">"Pulls live weather data from an API. 
+                                Built it to finally understand how JSON travels across the internet."</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">Java</span>
+                                <span class="project-card__tag">APIs</span>
+                                <span class="project-card__tag">JSON</span>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="project-card">
+                        <div class="project-card__image-wrapper">
+                            <img src="images/project3.jpg" alt="Screenshot of Tic-Tac-Toe CLI" class="project-card__image" loading="lazy" />
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/codebyaliyan" class="project-card__link" aria-label="View live demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/codebyaliyan/Tik-Tak-Toe" class="project-card__link" aria-label="View GitHub repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Tic-Tac-Toe</h3>
+                            <p class="project-card__description">"My first real OOP project. Learned how classes and 
+                                objects interact by building this terminal-based game for two players."</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">Java</span>
+                                <span class="project-card__tag">OOP</span>
+                            </div>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Me-->
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__badge">Get in Touch</span>
+                    <h2 class="section__title" id="contact-title">Let's Connect!</h2>
+                    <p class="section__subtitle">Have a question or want to work together?</p>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <p class="contact__label">Email</p>
+                                <a href="mailto:codewithaliyan01@gmail.com" class="contact__value">codewithaliyan01@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <p class="contact__label">Phone</p>
+                                <a href="tel:+923359572906" class="contact__value">+923359572906</a>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <p class="contact__label">Location</p>
+                                <span class="contact__value">D.I.Khan, Pakistan</span>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="https://github.com/codebyaliyan" class="contact__social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/aliyan-ahmad801/" class="contact__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/aliyanawan801" class="contact__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form" id="contact-form">
+                        <!-- Web3Forms api key -->
+                        <input type="hidden" name="access_key" value="a5079bc6-ad1f-4ea4-85b4-3298a484f02f">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="contact__form-group">
+                            <input type="text" id="name" name="name" class="contact__input" placeholder=" " required />
+                            <label for="name" class="contact__label-float">Full Name</label>
+                            <span class="contact__validation-icon"><i class="fas fa-check-circle"></i></span>
+                        </div>
+    
+                        
+                        <div class="contact__form-group">
+                            <input type="email" id="email" name="email" class="contact__input" placeholder=" " required />
+                            <label for="email" class="contact__label-float">Email Address</label>
+                            <span class="contact__validation-icon"><i class="fas fa-check-circle"></i></span>
+                        </div>
+    
+                        <div class="contact__form-group">
+                            <input type="text" id="subject" name="subject" class="contact__input" placeholder=" " />
+                            <label for="subject" class="contact__label-float">Subject</label>
+                        </div>
+                        <div class="contact__form-group">
+                            <textarea id="message" name="message" class="contact__input contact__input--textarea" placeholder=" " required></textarea>
+                            <label for="message" class="contact__label-float">Message</label>
+                            <span class="contact__validation-icon"><i class="fas fa-check-circle"></i></span>
+                        </div>
+    
+                        <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+    
+                        <div id="form-status" style="margin-top: 16px; text-align: center; display: none;"></di>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" role="contentinfo">
+            <div class="container footer__container">
+                <div class="footer__brand">
+                    <a href="#hero" class="footer__logo">Aliyan Ahmad</a>
+                    <p class="footer__copy">
+                        &copy; <span id="current-year"></span> Aliyan Ahmad. All rights reserved.
+                    </p>
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__nav-item"><a href="#about" class="footer__nav-link">About</a></li>
+                    <li class="footer__nav-item"><a href="#skills" class="footer__nav-link">Skills</a></li>
+                    <li class="footer__nav-item"><a href="#projects" class="footer__nav-link">Projects</a></li>
+                    <li class="footer__nav-item"><a href="#contact" class="footer__nav-link">Contact</a></li>
+                </ul>
+                <div class="footer__social">
+                    <a href="https://github.com/codebyaliyan" class="footer__social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aliyan-ahmad801/" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/aliyanawan801" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+
+<!--Scroll Icon-->        
+        <div class="scroll-progress" aria-hidden="true">
+            <svg class="scroll-progress__svg" viewBox="0 0 100 100">
+                <circle class="scroll-progress__track" cx="50" cy="50" r="45" />
+                <circle class="scroll-progress__indicator" cx="50" cy="50" r="45" />
+            </svg>
+            <div class="scroll-progress__icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        (function() {
+            'use strict';
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            const progressRing = document.querySelector('.scroll-progress__indicator');
+            const header = document.querySelector('.header');
+            const pageWrapper = document.querySelector('.page-wrapper');
+            let ticking = false;
+
+            function updateScroll() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+                // Scroll ring
+                if (progressRing) {
+                    const circumference = 2 * Math.PI * 45;
+                    const offset = circumference - (progress / 100) * circumference;
+                    progressRing.style.strokeDashoffset = offset;
+                }
+                if (header) {
+                    if (scrollTop > 80) {
+                            header.classList.add('header--scrolled');
+                    } else {
+                        header.classList.remove('header--scrolled');
+                    }
+                }
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        updateScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+
+// calling function
+            window.addEventListener('load', function() {
+                updateScroll();
+                setTimeout(updateScroll, 100);
+            });
+
+//for mobile
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.querySelectorAll('.nav__link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (navToggle && navToggle.checked) {
+                        navToggle.checked = false;
+                    }
+                });
+            });
+
+        })();
+    // GitHub Calender for heatmap
+    setTimeout(function() {
+        const calendar = document.querySelector('.calendar');
+        if (!calendar) return;
+
+        const skipLink = calendar.querySelector('a[href*="contributions"]');
+        if (skipLink) skipLink.remove();
+
+        const heading = calendar.querySelector('.calendar-heading');
+        if (heading) {
+            const monthLabels = heading.querySelectorAll('.contrib-column');
+            heading.innerHTML = '';
+            monthLabels.forEach(function(label) {
+                heading.appendChild(label);
+            });
+        }
+        const legend = calendar.querySelector('.contrib-legend');
+        if (legend) {
+            const lists = legend.querySelectorAll('ul, li');
+            lists.forEach(function(list) {
+                if (list.tagName === 'LI') {
+                    const span = document.createElement('span');
+                    span.innerHTML = list.innerHTML;
+                    span.className = list.className;
+                    list.parentNode.replaceChild(span, list);
+                }
+            });
+        }
+
+    }, 1500);
+
+        const glow = document.getElementById('cursor-glow');
+            if (glow) {
+                document.addEventListener('mousemove', (e) => {
+                glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+            });
+        }
+
+    // Web3Form Implementaion
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contact-form');
+        const statusDiv = document.getElementById('form-status');
+        const submitBtn = document.getElementById('submit-btn');
+        if (!form) return;
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+        
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            statusDiv.style.display = 'none';
+            const formData = new FormData(form);
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    statusDiv.style.display = 'block';
+                    statusDiv.style.color = '#66FCF1';
+                    statusDiv.style.fontWeight = '600';
+                    statusDiv.innerHTML = '✅ Your message was sent successfully! I\'ll get back to you soon.';
+                    form.reset(); // Clear the form
+                    } else {
+                    statusDiv.style.display = 'block';
+                    statusDiv.style.color = '#e74c3c';
+                    statusDiv.style.fontWeight = '600';
+                    statusDiv.innerHTML = '❌ Something went wrong. Please try again or email me directly.';
+                }
+            })
+            .catch(error => {
+                statusDiv.style.display = 'block';
+                statusDiv.style.color = '#e74c3c';
+                statusDiv.style.fontWeight = '600';
+                statusDiv.innerHTML = '❌ Network error. Please check your connection and try again.';
+            })
+            .finally(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                if (statusDiv.style.color === '#66FCF1') {
+                    setTimeout(() => {
+                        statusDiv.style.display = 'none';
+                    }, 6000);
+                }
+            });
+        });
+    });
+</script>
+<!-- Cursor light -->
+<div id="cursor-glow" class="cursor-glow"></div>
+</body>
+</html>
