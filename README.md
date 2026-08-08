@@ -146,7 +146,7 @@ portfolio/
 
 | **Platform** | **Link** |
 |---|---|
-| **Live Demo** | [aliyan-portfolio.tiiny.site](https://codebyaliyan.github.io/personal-portfolio/) |
+| **Live Demo** | [codebyaliyan/personal-portfolio](https://codebyaliyan.github.io/personal-portfolio/) |
 | **GitHub Repository** | [github.com/codebyaliyan/personal-portfolio](https://github.com/codebyaliyan/personal-portfolio) |
 | **GitHub Profile** | [github.com/codebyaliyan](https://github.com/codebyaliyan) |
 | **LinkedIn** | [linkedin.com/in/aliyan-ahmad801](https://linkedin.com/in/aliyan-ahmad801) |
