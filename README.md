@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-**[View Live Portfolio](https://aliyan-portfolio.tiiny.site)**
+**[View Live Portfolio](https://codebyaliyan.github.io/personal-portfolio/)**
 
 ---
 
@@ -146,7 +146,7 @@ portfolio/
 
 | **Platform** | **Link** |
 |---|---|
-| **Live Demo** | [aliyan-portfolio.tiiny.site](https://aliyan-portfolio.tiiny.site) |
+| **Live Demo** | [aliyan-portfolio.tiiny.site](https://codebyaliyan.github.io/personal-portfolio/) |
 | **GitHub Repository** | [github.com/codebyaliyan/personal-portfolio](https://github.com/codebyaliyan/personal-portfolio) |
 | **GitHub Profile** | [github.com/codebyaliyan](https://github.com/codebyaliyan) |
 | **LinkedIn** | [linkedin.com/in/aliyan-ahmad801](https://linkedin.com/in/aliyan-ahmad801) |
@@ -162,7 +162,7 @@ Building this portfolio from scratch was an incredible learning experience. I ga
 - **Modern CSS Techniques** — Glassmorphism, grid layouts, flexbox, and advanced animations
 - **Accessibility** — Semantic HTML, ARIA labels, and keyboard navigation
 - **Version Control** — Using Git and GitHub for project management
-- **Deployment** — Hosting on [Tiiny.host](https://tiiny.host/) for easy access
+- **Deployment** — Hosting on [github.com](https://github.com/) for easy access
 
 ---
 
