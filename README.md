@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-**[View Live Portfolio](https://codebyaliyan.github.io/personal-portfolio/)**
+**[View Live Portfolio]((https://aliyan-portfolio-kappa.vercel.app/))**
 
 ---
 
@@ -146,7 +146,7 @@ portfolio/
 
 | **Platform** | **Link** |
 |---|---|
-| **Live Demo** | [codebyaliyan/personal-portfolio](https://codebyaliyan.github.io/personal-portfolio/) |
+| **Live Demo** | [codebyaliyan/personal-portfolio]((https://aliyan-portfolio-kappa.vercel.app/)) |
 | **GitHub Repository** | [github.com/codebyaliyan/personal-portfolio](https://github.com/codebyaliyan/personal-portfolio) |
 | **GitHub Profile** | [github.com/codebyaliyan](https://github.com/codebyaliyan) |
 | **LinkedIn** | [linkedin.com/in/aliyan-ahmad801](https://linkedin.com/in/aliyan-ahmad801) |
